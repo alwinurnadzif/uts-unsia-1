@@ -68,12 +68,12 @@ body {
 }
 
 
-.introduction h1 {
+#introduction h1 {
   margin-bottom: .5rem;
   font-weight: 600;
 }
 
-.introduction p {
+#introduction p {
   color: var(--border-color);
   margin-bottom: 0;
   font-weight: 500;
@@ -108,4 +108,66 @@ ul.socials li a {
 .social-button:active {
   background-color: var(--primary-color);
   border: var(--primary-color);
+}
+
+.title-page {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+
+/* education-table */
+
+.education-table>:not(caption)>*>* {
+  border-bottom-width: 0;
+}
+
+.education-table {
+  color: var(--font-color);
+  border: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+.education-table td {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--misc-color);
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+  border: 1px solid var(--misc-color);
+  transition: .5s;
+}
+
+.education-container:hover {
+  box-shadow: 2px 2px 0 1px #fff;
+  border: 1px solid #fff;
+}
+
+.education-container p,
+.education-container h4 {
+  margin-bottom: 0;
+}
+
+.education-container p.period {
+  font-size: .6rem;
+  font-weight: bold;
+}
+
+.education-container h4 {
+  font-size: 1.4rem;
+}
+
+.education-container p {
+  color: var(--border-color);
 }
