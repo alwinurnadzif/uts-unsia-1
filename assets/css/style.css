@@ -79,6 +79,11 @@ body {
   font-weight: 500;
 }
 
+#introduction a {
+  color: var(--font-color);
+
+}
+
 ul.socials {
   margin-top: .5rem;
   display: flex;
@@ -116,6 +121,7 @@ ul.socials li a {
   display: flex;
   align-items: center;
   gap: .5rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -170,4 +176,20 @@ ul.socials li a {
 
 .education-container p {
   color: var(--border-color);
+}
+
+.education-container .img-small {
+  width: 18px;
+  height: 18px;
+}
+
+ul.contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.contact li {
+  display: flex;
+  gap: .5rem;
+  padding-bottom: .5rem;
 }

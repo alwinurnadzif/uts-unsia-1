@@ -19,13 +19,21 @@ timeline
     duration: 0.5,
     ease: "out",
   })
-  .from(
-    "#education",
-    {
-      x: -200,
-      opacity: 0,
-      duration: 1,
-      ease: "out",
-    },
-    ">",
-  );
+  .from("#education", {
+    x: -200,
+    opacity: 0,
+    duration: 0.5,
+    ease: "out",
+  })
+  .from("#work-experiences", {
+    x: 400,
+    opacity: 0,
+    duration: 0.5,
+    ease: "out",
+  })
+  .from("#contacts", {
+    x: 400,
+    opacity: 0,
+    duration: 0.5,
+    ease: "out",
+  });
